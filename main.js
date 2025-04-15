@@ -162,7 +162,7 @@ function showCurrentPair() {
       allCurrentWords.forEach((card) => {
         addInteractiveHoverEffect(card);
       });
-    }, 2000);
+    }, 6000);
     return;
   }
 
@@ -480,10 +480,10 @@ function addInteractiveHoverEffect(card) {
     const offsetX = (centerX - x) / centerX;
     const offsetY = (centerY - y) / centerY;
 
-    const rotateX = -offsetY * 3;
-    const rotateY = offsetX * 3;
-    const moveX = offsetX * 2;
-    const moveY = offsetY * 2;
+    const rotateX = -offsetY * 4;
+    const rotateY = offsetX * 4;
+    const moveX = offsetX * 3;
+    const moveY = offsetY * 3;
 
     card.style.transform = `translate(${moveX}px, ${moveY}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
   });

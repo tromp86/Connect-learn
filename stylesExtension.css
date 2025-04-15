@@ -21,13 +21,13 @@ body[data-theme="dark"] {
 body[data-theme="light"] {
   background-color: #f2f2f2; /* Світлий фон */
 }
-/* body[data-theme="dark"] .word {
+body[data-theme="dark"] .word {
   box-shadow: 10px 10px 40px #000000, -10px -10px 10px #2a2a2a;
 }
 
 body[data-theme="light"] .word {
   box-shadow: 10px 10px 40px #bebebe, -10px -10px 10px #ffffff;
-} */
+}
 body[data-theme="dark"] .sectionRight {
   background-color: #474440 /* Темніший відтінок для темної теми */
 }
@@ -101,6 +101,7 @@ body[data-theme="light"] .text-flip {
   font-weight: bold;
   /* border: #afafaf 1px solid; */
   /* border: none; */
+  border: 1px solid silver;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -134,7 +135,7 @@ body[data-theme="light"] .text-flip {
   color: white;
 }
 .fancy-message {
-  font-family: "Comic Sans MS", "Trebuchet MS", cursive;
+  font-family: 'Comfortaa', cursive;
   font-size: 33px;
   font-weight: bold;
   text-align: center;
