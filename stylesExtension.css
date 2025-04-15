@@ -21,13 +21,13 @@ body[data-theme="dark"] {
 body[data-theme="light"] {
   background-color: #f2f2f2; /* Світлий фон */
 }
-body[data-theme="dark"] .word {
-  box-shadow: 10px 10px 40px #000000, -10px -10px 10px #2a2a2a; /* Тіні для темної теми */
+/* body[data-theme="dark"] .word {
+  box-shadow: 10px 10px 40px #000000, -10px -10px 10px #2a2a2a;
 }
 
 body[data-theme="light"] .word {
-  box-shadow: 10px 10px 40px #bebebe, -10px -10px 10px #ffffff; /* Тіні для світлої теми */
-}
+  box-shadow: 10px 10px 40px #bebebe, -10px -10px 10px #ffffff;
+} */
 body[data-theme="dark"] .sectionRight {
   background-color: #474440 /* Темніший відтінок для темної теми */
 }
@@ -100,14 +100,14 @@ body[data-theme="light"] .text-flip {
   font-family: "Play", sans-serif;
   font-weight: bold;
   /* border: #afafaf 1px solid; */
-  border: none;
+  /* border: none; */
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
 
-  border-radius: 50px;
+  border-radius: 5px;
   background: #e0e0e0;
   /* box-shadow: 10px 10px 40px #bebebe, -10px -10px 10px #ffffff; */
 
@@ -282,9 +282,8 @@ footer{
     padding: 10px;
     margin: 18px 0;
     background-color: #f7f7f7;
-    border-radius: 60px;
+    border-radius: 5px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .fancy-message {

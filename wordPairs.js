@@ -4,8 +4,8 @@ const wordPairs = [
   { en: "apple", ua: "яблуко", level: "A1" },
   { en: "house", ua: "будинок", level: "A1" },
   { en: "car", ua: "автомобіль", level: "A1" },
-  // { en: "water", ua: "вода", level: "A1" },
-  // { en: "frog", ua: "жаба", level: "A1" },
+  { en: "water", ua: "вода", level: "A1" },
+  { en: "frog", ua: "жаба", level: "A1" },
 
   // Рівень B1
   { en: "look after", ua: "піклуватися", level: "B1" },

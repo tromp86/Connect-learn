@@ -104,7 +104,7 @@ h1 {
   border-radius: 10px;
   cursor: pointer;
   transition: transform 0.2s ease;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  /* box-shadow: 2px 2px 6px rgba(0,0,0,0.2); */
 }
 
 .level-btn:hover {
@@ -219,7 +219,6 @@ h1 {
   transition: transform 250ms ease;
   display: block;
   will-change: transform;
-  text-shadow: rgba(0, 0, 0, 0.1) 0 0 0.1em;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
