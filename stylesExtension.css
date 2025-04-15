@@ -109,7 +109,7 @@ body[data-theme="light"] .text-flip {
 
   border-radius: 50px;
   background: #e0e0e0;
-  box-shadow: 10px 10px 40px #bebebe, -10px -10px 10px #ffffff;
+  /* box-shadow: 10px 10px 40px #bebebe, -10px -10px 10px #ffffff; */
 
   transition: transform 0.15s ease;
   will-change: transform;
