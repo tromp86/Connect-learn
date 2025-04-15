@@ -1,0 +1,400 @@
+/* Загальні стилі для body */
+/* *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* background-color: #f0f4f8; */
+  height: 100.7%;
+  margin: -1px;
+  padding: 0px;
+  overflow: hidden;
+  position: relative;
+}
+body[data-theme="dark"] {
+  background-color: #272a28; /* Темний фон */
+}
+
+body[data-theme="light"] {
+  background-color: #f2f2f2; /* Світлий фон */
+}
+body[data-theme="dark"] .word {
+  box-shadow: 10px 10px 40px #000000, -10px -10px 10px #2a2a2a; /* Тіні для темної теми */
+}
+
+body[data-theme="light"] .word {
+  box-shadow: 10px 10px 40px #bebebe, -10px -10px 10px #ffffff; /* Тіні для світлої теми */
+}
+body[data-theme="dark"] .sectionRight {
+  background-color: #474440 /* Темніший відтінок для темної теми */
+}
+
+body[data-theme="light"] .sectionRight {
+  background-color: #fff3e6
+}
+body[data-theme="dark"] .text-flip {
+  color: #ffffff; /* Білий текст для темної теми */
+}
+
+body[data-theme="light"] .text-flip {
+  color: #000000; /* Чорний текст для світлої теми */
+}
+/* Стилі для контейнера */
+.container {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  width: 900px;
+  height: 400px;
+  margin: auto;
+}
+/* Стилі для секції лівої частини */
+.sectionLeft {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  /* margin-bottom: 20px; */
+  height: 154%;
+}
+
+.achievement {
+  position: absolute; /* Закріплення блоку внизу сторінки */
+  bottom: 10px; /* Відступ від низу */
+  width: 100%; /* Займає всю ширину */
+  z-index: 999; /* Переконайтеся, що елемент перебуває над іншими */
+}
+
+/* Стилі для секції правої частини */
+.sectionRight {
+  display: flex; /* Включено флекс-бокс */
+  flex-direction: row; /* Елементи вертикально розташовані */
+  align-items: center; /* Вирівнювання по центру */
+  /* max-height: 320px;
+  width: 100%; */
+  justify-content: space-evenly;
+  padding: 8px; /* Внутрішній відступ */
+  background-color: #fff3e6; /* Фон для стилю */
+  border-radius: 10px; /* Округлі кути */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 40px #bebebe, -10px -10px 10px #ffffff; */
+}
+
+/* Стилі для слів */
+
+.word {
+  padding: 30px;
+  width: 300px;
+  height: 40px;
+  margin: auto;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  font-size: 32px;
+  margin: 23px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  font-family: "Play", sans-serif;
+  font-weight: bold;
+  /* border: #afafaf 1px solid; */
+  border: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 10px 10px 40px #bebebe, -10px -10px 10px #ffffff;
+
+  transition: transform 0.15s ease;
+  will-change: transform;
+  perspective: 100px;
+}
+/* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 8px rgba(255, 255, 255, 0.2);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.213); */
+
+/* Стилі для вибраних та правильних/неправильних слів */
+.word.selected {
+  background-color: #f0c420;
+  transform: scale(1.05);
+}
+
+.word.matched {
+  background-color: #56d56b;
+  color: white;
+}
+
+.word.wrong {
+  background-color: #f44336;
+  color: white;
+}
+.fancy-message {
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive;
+  font-size: 33px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 8px rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+.emoji {
+  font-size: 90px;
+  margin-bottom: -5px;
+}
+.text-flip {
+  width: 360px;
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+}
+/* Анімація для емоджі */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Анімація для повідомлень */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+footer{
+  position: fixed;
+  bottom: 5px;
+  width: 100%;
+  font-size: 9px;
+  color: gray;
+  font-family: Arial, sans-serif;
+  text-transform: lowercase;
+  overflow: hidden;
+}
+/* Мобільна версія */
+/* Версія для iPad Pro */
+@media (max-width: 1024px) {
+  .sectionLeft {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 12px;
+    align-content: center;
+    align-items: flex-start;
+    /* transform: translateY(80px); */
+}
+  /* .sectionLeft {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: calc(100% - 30px);
+    padding: 15px;
+    height: 100%;
+  } */
+  .level-btn{
+    font-size: 28px;
+  }
+  .sectionRight {
+    width: calc(100% + 30px);
+  }
+  .achievement {
+    position: fixed;
+    bottom: 10px;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+  }
+  .word {
+    width: 350px;
+    height: 70px;
+    font-size: 35px;
+    margin: 25px;
+}
+  .emoji {
+    font-size: 110px;
+  }
+  #batteryOutline {
+    height: 10px;
+  }
+  #progressContainer {
+    width: calc(100% + 35px);
+    transform: translateY(11px);
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .sectionLeft {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    transform: translateY(90px);
+    padding: 10px;
+  }
+
+  .sectionRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    background-color: #fff3e6;
+    /* border-radius: 20px; */
+    padding: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .achievement {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    margin: 2px;
+  }
+
+  .word {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 70px;
+    font-size: 18px;
+    padding: 10px;
+    margin: 18px 0;
+    background-color: #f7f7f7;
+    border-radius: 60px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .fancy-message {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+
+  .level-btn {
+    font-size: 15px;
+  }
+  .emoji {
+    margin-top: 10px;
+    font-size: 85px;
+    margin-bottom: 5px;
+  }
+  .wrong-box .label {
+    font-size: 10px;
+  }
+  footer {
+    width: 100%;
+  }
+  #batteryOutline {
+    height: 10px;
+  }
+  #progressContainer {
+    transform: translateY(11px);
+    margin: auto;
+  }
+  .text-flip {
+    width: 175px;
+    font-size: 23px;
+    padding: 0;
+    margin-right: 20px;
+    /* transform: translateX(-10px); */
+  }
+  .wrong-box .label {
+    font-size: 10px;
+    transform: translateX(-18px);
+    padding-right: 14px;
+  }
+  #wrongCount {
+    transform: translateX(48px);
+    font-size: 32px;
+  }
+}
+@media (max-width: 375px) {
+  body{
+    height: 160%;
+  }
+  .theme-circle {
+    transform: translate(270px, 17px);
+}
+.topnav a {
+  padding: 12px 9px;
+}
+  .level-btn {
+    font-size: 12px;
+  }
+  .emoji {
+    font-size: 50px;
+  }
+  .fancy-message {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .word {
+    width: 150px;
+    height: 50px;
+    padding: 8px;
+  }
+  .sectionLeft {
+    height: 72%;
+    align-content: flex-end;
+  }
+  .sectionRight {
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transform: translateX(-1px);
+  }
+  .text-flip {
+    width: 230px;
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+  }
+  .wrong-box .label {
+    font-size: 9px;
+    transform: translateX(8px);
+  }
+  #wrongCount {
+    transform: translateX(8px);
+  }
+}

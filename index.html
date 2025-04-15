@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect&learn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesExtension.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="topnav">
+      <a href="./timeLine.html">News</a>
+      <!-- <a href="#contact">Contact</a> -->
+      <a href="#contact" style="color: gray; pointer-events: none; cursor: default;">Contact</a>
+      <a href="./pop.html" class="split popUp" id="toggleOverlay">Help</a>
+      <a id="themeToggle">Switch Theme</a>
+      <div class="theme-circle"></div>
+      <span class="spanLevel">складність</span>
+    </div>
+    
+    <div class="level-buttons">
+      <button class="button">
+        <div class="button-outer">
+          <div class="button-inner level-btn a1" data-level="A1">
+            <span>A1-A2</span>
+          </div>
+        </div>
+      </button>
+
+      <button class="button">
+        <div class="button-outer">
+          <div class="button-inner level-btn b1" data-level="B1">
+            <span>B1-B2</span>
+          </div>
+        </div>
+      </button>
+
+      <button class="button">
+        <div class="button-outer">
+          <div class="button-inner level-btn c1" data-level="C1">
+            <span>C1-C2</span>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <div class="container">
+        <div class="sectionLeft"></div>
+
+      </div>
+      <div class="achievement">
+        <div id="progressContainer">
+          <div id="batteryOutline">
+            <div id="batteryFill"></div>
+          </div>
+        </div>
+        <div class="sectionRight">
+      </div> 
+      <footer>ver. 1.8</footer>
+      <script type="module" src="main.js"></script>
+  </body>
+</html>
