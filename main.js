@@ -228,7 +228,7 @@ function showCurrentPair() {
             setTimeout(() => {
               currentIndex += batchSize;
               showCurrentPair();
-            }, 500);
+            }, 50);
           } else {
             first = null;
           }
@@ -260,8 +260,11 @@ document.querySelectorAll(".level-btn").forEach((button) => {
   });
 });
 
-// Ініціалізація гри
-showCurrentPair();
+window.onload = () => {
+  setTimeout(() => {
+    showCurrentPair();
+  }, 1000); // Затримка 1 секунда
+};
 
 const sectionRight = document.querySelector(".sectionRight");
 function updateRating() {
