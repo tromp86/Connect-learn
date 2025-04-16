@@ -251,7 +251,7 @@ footer{
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-    transform: translateY(90px);
+    transform: translateY(112px);
     padding: 10px;
   }
 
@@ -348,6 +348,12 @@ footer{
     transform: translateX(48px);
     font-size: 32px;
   }
+  .spanLevel{
+    display: none;
+  }
+  .theme-circle {
+    transform: translate(315px, 18px);
+}
 }
 @media (max-width: 375px) {
   body{
