@@ -69,7 +69,7 @@ function updateWordPairsByLevel(level) {
         default:
           wordElement.style.border = "0px solidrgb(255, 0, 0)";
           circle.style.backgroundColor = "grey";
-          spanLevel.style.opacity = "0";
+          spanLevel.style.opacity = "1";
       }
     });
   }, 920);
@@ -245,7 +245,7 @@ function showCurrentPair() {
             secondCopy.classList.remove("selected", "wrong");
             first = null;
             updateRating();
-          }, 700);
+          }, 500);
         }
       }
     });
@@ -263,7 +263,7 @@ document.querySelectorAll(".level-btn").forEach((button) => {
 window.onload = () => {
   setTimeout(() => {
     showCurrentPair();
-  }, 1000); // Затримка 1 секунда
+  }, 500); // Затримка 1 секунда
 };
 
 const sectionRight = document.querySelector(".sectionRight");
@@ -495,6 +495,8 @@ function addInteractiveHoverEffect(card) {
     card.style.transform = "translate(0, 0) rotateX(0) rotateY(0) scale(1)";
   });
 }
-allCurrentWords.forEach((card) => {
-  addInteractiveHoverEffect(card);
-});
+setTimeout(() => {
+  allCurrentWords.forEach((card) => {
+    addInteractiveHoverEffect(card);
+  });
+}, 510);

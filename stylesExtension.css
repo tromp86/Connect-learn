@@ -21,21 +21,21 @@ body[data-theme="dark"] {
 body[data-theme="light"] {
   background-color: #f2f2f2; /* Світлий фон */
 }
-body[data-theme="dark"] .word {
+/* body[data-theme="dark"] .word {
   box-shadow: 10px 10px 40px #000000, -10px -10px 10px #2a2a2a;
-  transition: box-shadow 2s ease, background-color 0.1s ease, transform 3s ease;
+  transition: transform 0.1s ease, box-shadow 2s ease, background-color 0.1s ease;
 }
 
 body[data-theme="light"] .word {
   box-shadow: 10px 10px 40px #bebebe, -10px -10px 10px #ffffff;
-  transition: box-shadow 2s ease, background-color 0.1s ease, transform 3s ease;
-}
+  transition: transform 0.1s ease, box-shadow 2s ease, background-color 0.1s ease;
+} */
 body[data-theme="dark"] .sectionRight {
-  background-color: #474440 /* Темніший відтінок для темної теми */
+  background-color: #474440; /* Темніший відтінок для темної теми */
 }
 
 body[data-theme="light"] .sectionRight {
-  background-color: #fff3e6
+  background-color: #fff3e6;
 }
 body[data-theme="dark"] .text-flip {
   color: #ffffff; /* Білий текст для темної теми */
@@ -98,7 +98,7 @@ body[data-theme="light"] .text-flip {
   cursor: pointer;
   font-size: 32px;
   margin: 23px;
-  /* transition: transform 0.2s ease, background-color 0.3s ease; */
+  transition: transform 0.2s ease;
   font-family: "Play", sans-serif;
   font-weight: bold;
   /* border: #afafaf 1px solid; */
@@ -112,14 +112,18 @@ body[data-theme="light"] .text-flip {
   border-radius: 5px;
   background: #e0e0e0;
   /* box-shadow: 10px 10px 40px #bebebe, -10px -10px 10px #ffffff; */
-
-  transition: transform 0.15s ease;
   will-change: transform;
   perspective: 100px;
 }
 /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 8px rgba(255, 255, 255, 0.2);
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.213); */
-
+.word:hover {
+  transition: transform 0.1s ease;
+  will-change: transform;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  perspective: 600px;
+}
 /* Стилі для вибраних та правильних/неправильних слів */
 .word.selected {
   background-color: #f0c420;
@@ -136,7 +140,7 @@ body[data-theme="light"] .text-flip {
   color: white;
 }
 .fancy-message {
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   font-size: 33px;
   font-weight: bold;
   text-align: center;
@@ -176,7 +180,7 @@ body[data-theme="light"] .text-flip {
     opacity: 1;
   }
 }
-footer{
+footer {
   position: fixed;
   bottom: 5px;
   width: 100%;
@@ -197,7 +201,7 @@ footer{
     align-content: center;
     align-items: flex-start;
     /* transform: translateY(80px); */
-}
+  }
   /* .sectionLeft {
     display: flex;
     flex-wrap: wrap;
@@ -206,7 +210,7 @@ footer{
     padding: 15px;
     height: 100%;
   } */
-  .level-btn{
+  .level-btn {
     font-size: 28px;
   }
   .sectionRight {
@@ -223,7 +227,7 @@ footer{
     height: 70px;
     font-size: 35px;
     margin: 25px;
-}
+  }
   .emoji {
     font-size: 110px;
   }
@@ -348,23 +352,36 @@ footer{
     transform: translateX(48px);
     font-size: 32px;
   }
-  .spanLevel{
+  .spanLevel {
     display: none;
   }
   .theme-circle {
     transform: translate(315px, 18px);
+  }
 }
+
+@media (max-width: 540px) {
+  .sectionLeft {
+    transform: translateY(80px);
+  }
+  .word {
+    width: 175px;
+    height: 55px;
+  }
+  .theme-circle {
+    transform: translate(315px, 20px);
+  }
 }
 @media (max-width: 375px) {
-  body{
+  body {
     height: 160%;
   }
   .theme-circle {
     transform: translate(270px, 17px);
-}
-.topnav a {
-  padding: 12px 9px;
-}
+  }
+  .topnav a {
+    padding: 12px 9px;
+  }
   .level-btn {
     font-size: 12px;
   }
