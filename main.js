@@ -190,66 +190,76 @@ function showCurrentPair() {
   // Перемішати і додати в колонки
   shuffle(allCurrentWords).forEach((div) => {
     if (div.dataset.lang === "en") {
-      engColumn.appendChild(div);
+        engColumn.appendChild(div);
     } else {
-      uaColumn.appendChild(div);
+        uaColumn.appendChild(div);
     }
 
     div.addEventListener("click", () => {
-      if (div.classList.contains("matched") || div === first) return;
+        if (div.classList.contains("matched") || div === first) return;
 
-      div.classList.add("selected");
+        div.classList.add("selected");
 
-      if (!first) {
-        first = div;
-      } else {
-        const word1 = first.dataset.word;
-        const word2 = div.dataset.word;
-
-        const isMatch = wordPairs.some(
-          (p) =>
-            (p.en === word1 && p.ua === word2) ||
-            (p.en === word2 && p.ua === word1)
-        );
-
-        const firstCopy = first;
-        const secondCopy = div;
-
-        if (isMatch) {
-          firstCopy.classList.remove("selected");
-          secondCopy.classList.remove("selected");
-          firstCopy.classList.add("matched");
-          secondCopy.classList.add("matched");
-
-          const allMatched = allCurrentWords.every((el) =>
-            el.classList.contains("matched")
-          );
-          if (allMatched) {
-            setTimeout(() => {
-              currentIndex += batchSize;
-              showCurrentPair();
-            }, 50);
-          } else {
-            first = null;
-          }
+        if (!first) {
+            first = div;
         } else {
-          // Збільшити лічильник неправильних спроб
-          // wrongAttempts++;
-          firstCopy.classList.add("wrong");
-          secondCopy.classList.add("wrong");
-          wrongAttempts += 1;
-          updateWrongAttemptsDisplay();
-          // console.log(wrongAttempts);
-          setTimeout(() => {
-            firstCopy.classList.remove("selected", "wrong");
-            secondCopy.classList.remove("selected", "wrong");
-            first = null;
-            updateRating();
-          }, 500);
+            const word1 = first.dataset.word;
+            const lang1 = first.dataset.lang;
+            const word2 = div.dataset.word;
+            const lang2 = div.dataset.lang;
+
+            // Перевіряємо, що вибрані слова мають різні мови
+            if (lang1 !== lang2) {
+                const isMatch = wordPairs.some(
+                    (p) =>
+                        (p.en === word1 && p.ua === word2) ||
+                        (p.en === word2 && p.ua === word1)
+                );
+
+                const firstCopy = first;
+                const secondCopy = div;
+
+                if (isMatch) {
+                    firstCopy.classList.remove("selected");
+                    secondCopy.classList.remove("selected");
+                    firstCopy.classList.add("matched");
+                    secondCopy.classList.add("matched");
+
+                    const allMatched = allCurrentWords.every((el) =>
+                        el.classList.contains("matched")
+                    );
+                    if (allMatched) {
+                        setTimeout(() => {
+                            currentIndex += batchSize;
+                            showCurrentPair();
+                        }, 50);
+                    } else {
+                        first = null;
+                    }
+                } else {
+                    // Тільки якщо слова різних мов і невгадані, збільшуємо лічильник
+                    firstCopy.classList.add("wrong");
+                    secondCopy.classList.add("wrong");
+                    wrongAttempts += 1;
+                    updateWrongAttemptsDisplay();
+
+                    setTimeout(() => {
+                        firstCopy.classList.remove("selected", "wrong");
+                        secondCopy.classList.remove("selected", "wrong");
+                        first = null;
+                        updateRating();
+                    }, 500);
+                }
+            } else {
+                // Якщо обидва слова одного мовного типу, просто скидаємо вибір
+                first.classList.remove("selected");
+                div.classList.remove("selected");
+                first = null;
+            }
         }
-      }
     });
-  });
+});
+
 }
 
 // Додавання логіки для кнопок рівнів

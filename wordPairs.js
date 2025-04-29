@@ -575,13 +575,11 @@ const uniquePairs = [
 
   // Рівень B1
   { en: "look after", ua: "піклуватися", level: "B1" },
-  { en: "travel", ua: "подорожувати", level: "B1" },
   { en: "mistake", ua: "помилка", level: "B1" },
   { en: "friendship", ua: "дружба", level: "B1" },
   // Рівень B1
   { en: "analyze", ua: "аналізувати", level: "B1" },
   { en: "assist", ua: "допомагати", level: "B1" },
-  { en: "compare", ua: "порівнювати", level: "B1" },
   { en: "criticize", ua: "критикувати", level: "B1" },
   { en: "debate", ua: "дискутувати", level: "B1" },
   { en: "defend", ua: "захищати", level: "B1" },
@@ -599,7 +597,6 @@ const uniquePairs = [
   { en: "justify", ua: "виправдовувати", level: "B1" },
   { en: "optimize", ua: "оптимізувати", level: "B1" },
   { en: "synthesize", ua: "синтезувати", level: "B1" },
-  { en: "transform", ua: "трансформувати", level: "B1" },
   // Рівень B1
   { en: "adjust", ua: "регулювати", level: "B1" },
   { en: "analyze", ua: "аналізувати", level: "B1" },
@@ -736,7 +733,6 @@ const uniquePairs = [
   { en: "resolve", ua: "вирішувати", level: "B1" },
 
   // Рівень B1 - Іменники (Nouns)
-  { en: "analysis", ua: "аналіз", level: "B1" },
   { en: "concept", ua: "концепція", level: "B1" },
   { en: "debate", ua: "дискусія", level: "B1" },
   { en: "emphasis", ua: "наголос", level: "B1" },
@@ -756,8 +752,6 @@ const uniquePairs = [
   { en: "intellectual", ua: "інтелектуальний", level: "B1" },
   { en: "relevant", ua: "актуальний", level: "B1" },
   { en: "sustainable", ua: "стійкий", level: "B1" },
-  { en: "theoretical", ua: "теоретичний", level: "B1" },
-  { en: "transformative", ua: "трансформаційний", level: "B1" },
 
   // Рівень B1 - Дієслова (Verbs)
   { en: "anticipate", ua: "очікувати", level: "B1" },
@@ -806,15 +800,11 @@ const uniquePairs = [
   { en: "interpret", ua: "інтерпретувати", level: "B1" },
   { en: "synthesize", ua: "синтезувати", level: "B1" },
   // Рівень B1 - Іменники (Nouns)
-  { en: "priority", ua: "пріоритет", level: "B1" },
-  { en: "progress", ua: "прогрес", level: "B1" },
   { en: "recommendation", ua: "рекомендація", level: "B1" },
   { en: "requirement", ua: "вимога", level: "B1" },
   { en: "resource", ua: "ресурс", level: "B1" },
   { en: "solution", ua: "рішення", level: "B1" },
   { en: "trend", ua: "тенденція", level: "B1" },
-  { en: "vision", ua: "бачення", level: "B1" },
-  { en: "strategy", ua: "стратегія", level: "B1" },
   { en: "evaluation", ua: "оцінка", level: "B1" },
 
   // Рівень B1 - Прикметники (Adjectives)
@@ -875,7 +865,6 @@ const uniquePairs = [
   { en: "implement", ua: "впроваджувати", level: "B1" },
   { en: "integrate", ua: "інтегрувати", level: "B1" },
   // Рівень B1 - Іменники (Nouns)
-  { en: "strategy", ua: "стратегія", level: "B1" },
   { en: "evaluation", ua: "оцінка", level: "B1" },
   { en: "function", ua: "функція", level: "B1" },
   { en: "impact", ua: "вплив", level: "B1" },
@@ -883,8 +872,6 @@ const uniquePairs = [
   { en: "integration", ua: "інтеграція", level: "B1" },
   { en: "priority", ua: "пріоритет", level: "B1" },
   { en: "reliability", ua: "надійність", level: "B1" },
-  { en: "trend", ua: "тенденція", level: "B1" },
-  { en: "vision", ua: "бачення", level: "B1" },
 
   // Рівень B1 - Прикметники (Adjectives)
   { en: "logical", ua: "логічний", level: "B1" },
@@ -902,8 +889,7 @@ const uniquePairs = [
   { en: "sustain", ua: "підтримувати", level: "B1" },
   { en: "validate", ua: "підтверджувати", level: "B1" },
   { en: "utilize", ua: "використовувати", level: "B1" },
-  { en: "transform", ua: "трансформувати", level: "B1" },
-  { en: "analyze", ua: "аналізувати", level: "B1" },
+
   { en: "optimize", ua: "оптимізувати", level: "B1" },
   { en: "prioritize", ua: "пріоритезувати", level: "B1" },
   { en: "conclude", ua: "робити висновок", level: "B1" },
@@ -939,11 +925,9 @@ const uniquePairs = [
   { en: "integrate", ua: "інтегрувати", level: "B1" },
   { en: "synthesize", ua: "синтезувати", level: "B1" },
   { en: "prioritize", ua: "пріоритезувати", level: "B1" },
-  { en: "optimize", ua: "оптимізувати", level: "B1" },
   { en: "facilitate", ua: "сприяти", level: "B1" },
   { en: "adapt", ua: "адаптуватися", level: "B1" },
-  { en: "analyze", ua: "аналізувати", level: "B1" },
-  { en: "transform", ua: "трансформувати", level: "B1" },
+
   // Рівень B1 - Іменники (Nouns)
   { en: "transformation", ua: "трансформація", level: "B1" },
   { en: "adaptation", ua: "адаптація", level: "B1" },
@@ -954,7 +938,6 @@ const uniquePairs = [
   { en: "flexibility", ua: "гнучкість", level: "B1" },
   { en: "innovation", ua: "інновація", level: "B1" },
   { en: "implementation", ua: "впровадження", level: "B1" },
-  { en: "priority", ua: "пріоритет", level: "B1" },
 
   // Рівень B1 - Прикметники (Adjectives)
   { en: "effective", ua: "ефективний", level: "B1" },
@@ -1201,6 +1184,77 @@ const uniquePairs = [
   { en: "commence", ua: "розпочинати", level: "C1" },
   { en: "elucidate", ua: "пояснити", level: "C1" },
   { en: "comprehensive", ua: "всебічний", level: "C1" },
+
+  { en: "abstraction", ua: "абстракція", level: "C1" },
+{ en: "adversity", ua: "невзгоди", level: "C1" },
+{ en: "allegation", ua: "заява", level: "C1" },
+{ en: "aspiration", ua: "стремління", level: "C1" },
+{ en: "coincidence", ua: "збіг", level: "C1" },
+{ en: "contingency", ua: "непередбачувана ситуація", level: "C1" },
+{ en: "disposition", ua: "характер", level: "C1" },
+{ en: "elucidation", ua: "пояснення", level: "C1" },
+{ en: "inference", ua: "висновок", level: "C1" },
+{ en: "reconciliation", ua: "примирення", level: "C1" },
+
+// Рівень C1 - Прикметники (Adjectives)
+{ en: "astute", ua: "проникливий", level: "C1" },
+{ en: "candid", ua: "відвертий", level: "C1" },
+{ en: "cohesive", ua: "згуртований", level: "C1" },
+{ en: "compelling", ua: "переконливий", level: "C1" },
+{ en: "cumbersome", ua: "незграбний", level: "C1" },
+{ en: "devious", ua: "хитромудрий", level: "C1" },
+{ en: "exorbitant", ua: "надмірний", level: "C1" },
+{ en: "implicit", ua: "неявний", level: "C1" },
+{ en: "inquisitive", ua: "допитливий", level: "C1" },
+{ en: "tedious", ua: "нудний", level: "C1" },
+
+// Рівень C1 - Дієслова (Verbs)
+{ en: "advocate", ua: "відстоювати", level: "C1" },
+{ en: "alleviate", ua: "полегшувати", level: "C1" },
+{ en: "circumvent", ua: "обходити", level: "C1" },
+{ en: "contradict", ua: "заперечувати", level: "C1" },
+{ en: "deviate", ua: "відхилятися", level: "C1" },
+{ en: "discern", ua: "розпізнавати", level: "C1" },
+{ en: "eradicate", ua: "викорінювати", level: "C1" },
+{ en: "exacerbate", ua: "загострювати", level: "C1" },
+{ en: "fluctuate", ua: "коливатися", level: "C1" },
+{ en: "scrutinize", ua: "ретельно перевіряти", level: "C1" },
+
+// Рівень C1 - Іменники (Nouns)
+{ en: "abstraction", ua: "абстракція", level: "C1" },
+{ en: "adversity", ua: "невзгоди", level: "C1" },
+{ en: "allegation", ua: "заява", level: "C1" },
+{ en: "aspiration", ua: "стремління", level: "C1" },
+{ en: "coincidence", ua: "збіг", level: "C1" },
+{ en: "contingency", ua: "непередбачувана ситуація", level: "C1" },
+{ en: "disposition", ua: "характер", level: "C1" },
+{ en: "elucidation", ua: "пояснення", level: "C1" },
+{ en: "inference", ua: "висновок", level: "C1" },
+{ en: "reconciliation", ua: "примирення", level: "C1" },
+
+// Рівень C1 - Прикметники (Adjectives)
+{ en: "astute", ua: "проникливий", level: "C1" },
+{ en: "candid", ua: "відвертий", level: "C1" },
+{ en: "cohesive", ua: "згуртований", level: "C1" },
+{ en: "compelling", ua: "переконливий", level: "C1" },
+{ en: "cumbersome", ua: "незграбний", level: "C1" },
+{ en: "devious", ua: "хитромудрий", level: "C1" },
+{ en: "exorbitant", ua: "надмірний", level: "C1" },
+{ en: "implicit", ua: "неявний", level: "C1" },
+{ en: "inquisitive", ua: "допитливий", level: "C1" },
+{ en: "tedious", ua: "нудний", level: "C1" },
+
+// Рівень C1 - Дієслова (Verbs)
+{ en: "advocate", ua: "відстоювати", level: "C1" },
+{ en: "alleviate", ua: "полегшувати", level: "C1" },
+{ en: "circumvent", ua: "обходити", level: "C1" },
+{ en: "contradict", ua: "заперечувати", level: "C1" },
+{ en: "deviate", ua: "відхилятися", level: "C1" },
+{ en: "discern", ua: "розпізнавати", level: "C1" },
+{ en: "eradicate", ua: "викорінювати", level: "C1" },
+{ en: "exacerbate", ua: "загострювати", level: "C1" },
+{ en: "fluctuate", ua: "коливатися", level: "C1" },
+{ en: "scrutinize", ua: "ретельно перевіряти", level: "C1" },
 ];
 
 // function countByLevel(wordPairs) {
