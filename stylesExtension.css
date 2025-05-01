@@ -372,9 +372,25 @@ footer {
     transform: translate(315px, 20px);
   }
 }
+@media (max-width: 414px) {
+  .word {
+    width: 165px;
+    height: 70px;
+    padding: 8px;
+    font-size: 15px;
+  }
+  #wrongCount {
+    transform: translateX(30px);
+    font-size: 32px;
+}
+}
+
 @media (max-width: 375px) {
   body {
     height: 160%;
+  }
+  .sectionLeft {
+    transform: translateY(45px);
   }
   .theme-circle {
     transform: translate(270px, 17px);
@@ -395,8 +411,9 @@ footer {
   }
   .word {
     width: 150px;
-    height: 50px;
+    height: 45px;
     padding: 8px;
+    font-size: 13px;
   }
   .sectionLeft {
     height: 72%;
@@ -415,8 +432,8 @@ footer {
     margin: 0;
   }
   .wrong-box .label {
-    font-size: 9px;
-    transform: translateX(8px);
+    font-size: 8px;
+    transform: translateX(-18px);
   }
   #wrongCount {
     transform: translateX(8px);
