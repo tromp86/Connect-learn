@@ -150,6 +150,13 @@ footer {
 .footer-content a:hover {
   text-decoration: underline;
 }
+
+.big-image {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
 /* footer */
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -158,7 +165,9 @@ footer {
   .timeline::after {
     left: 31px;
   }
-
+.big-image {
+  width: 100%;
+}
   /* Full-width containers */
   .container {
     width: 100%;
