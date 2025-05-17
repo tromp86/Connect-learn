@@ -51,18 +51,18 @@ body[data-theme="light"] .text-flip {
   left: 50%;
   transform: translate(-50%, -20%);
   width: 900px;
-  height: 400px;
   margin: auto;
 }
 /* Стилі для секції лівої частини */
 .sectionLeft {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-end;
   padding: 20px;
+  margin-top: 80px; /* додаємо відступ згори */
   border-radius: 10px;
-  /* margin-bottom: 20px; */
-  height: 154%;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
 .achievement {
@@ -91,8 +91,8 @@ body[data-theme="light"] .text-flip {
 
 .word {
   padding: 30px;
-  width: 300px;
-  height: 40px;
+  width: 250px;
+  height: 30px;
   margin: auto;
   background-color: #f7f7f7;
   cursor: pointer;
@@ -212,6 +212,7 @@ footer {
   } */
   .level-btn {
     font-size: 28px;
+    width: 45px;
   }
   .sectionRight {
     width: calc(100% + 30px);
@@ -222,12 +223,12 @@ footer {
     width: calc(100% - 30px);
     margin: 0 auto;
   }
-  .word {
+  /* .word {
     width: 350px;
     height: 70px;
     font-size: 35px;
     margin: 25px;
-  }
+  } */
   .emoji {
     font-size: 110px;
   }
@@ -257,6 +258,7 @@ footer {
     width: 100%;
     transform: translateY(112px);
     padding: 10px;
+    margin-top: 0px;
   }
 
   .sectionRight {
@@ -266,7 +268,6 @@ footer {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     background-color: #fff3e6;
-    /* border-radius: 20px; */
     padding: 1px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
@@ -341,7 +342,6 @@ footer {
     font-size: 19px;
     padding: 0;
     margin-right: 20px;
-    /* transform: translateX(-10px); */
   }
   .wrong-box .label {
     font-size: 10px;
@@ -386,12 +386,12 @@ footer {
 }
 
 @media (max-width: 375px) {
-  body {
+  /* body {
     height: 160%;
-  }
-  .sectionLeft {
+  } */
+  /* .sectionLeft {
     transform: translateY(45px);
-  }
+  } */
   .theme-circle {
     transform: translate(270px, 17px);
   }
