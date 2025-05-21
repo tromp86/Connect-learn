@@ -15,34 +15,26 @@ body {
   position: relative;
 }
 body[data-theme="dark"] {
-  background-color: #272a28; /* Темний фон */
+  background-color: #272a28;
 }
 
 body[data-theme="light"] {
-  background-color: #f2f2f2; /* Світлий фон */
-}
-/* body[data-theme="dark"] .word {
-  box-shadow: 10px 10px 40px #000000, -10px -10px 10px #2a2a2a;
-  transition: transform 0.1s ease, box-shadow 2s ease, background-color 0.1s ease;
+  background-color: #f2f2f2;
 }
 
-body[data-theme="light"] .word {
-  box-shadow: 10px 10px 40px #bebebe, -10px -10px 10px #ffffff;
-  transition: transform 0.1s ease, box-shadow 2s ease, background-color 0.1s ease;
-} */
 body[data-theme="dark"] .sectionRight {
-  background-color: #474440; /* Темніший відтінок для темної теми */
+  background-color: #474440; 
 }
 
 body[data-theme="light"] .sectionRight {
   background-color: #fff3e6;
 }
 body[data-theme="dark"] .text-flip {
-  color: #ffffff; /* Білий текст для темної теми */
+  color: #ffffff;
 }
 
 body[data-theme="light"] .text-flip {
-  color: #000000; /* Чорний текст для світлої теми */
+  color: #000000; 
 }
 /* Стилі для контейнера */
 .container {
@@ -98,7 +90,7 @@ body[data-theme="light"] .text-flip {
   cursor: pointer;
   font-size: 32px;
   margin: 23px;
-  transition: transform 0.2s ease;
+  transition: transform 0.1s ease;
   font-family: "Play", sans-serif;
   font-weight: bold;
   /* border: #afafaf 1px solid; */
