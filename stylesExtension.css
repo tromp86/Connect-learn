@@ -77,8 +77,8 @@ body[data-theme="light"] .text-flip {
   display: flex; /* Включено флекс-бокс */
   flex-direction: row; /* Елементи вертикально розташовані */
   align-items: center; /* Вирівнювання по центру */
-  /* max-height: 320px;
-  width: 100%; */
+  /* max-height: 320px;*/
+  /* width: 100%;  */
   justify-content: space-evenly;
   padding: 8px; /* Внутрішній відступ */
   background-color: #fff3e6; /* Фон для стилю */

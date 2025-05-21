@@ -14,7 +14,6 @@ const uniquePairs = [
   { en: "adventure", ua: "пригоди", level: "A1" },
   { en: "description", ua: "опис", level: "A1" },
   { en: "schedule", ua: "розклад", level: "A1" },
-  { en: "engineer", ua: "інженер", level: "A1" },
   { en: "celebration", ua: "святкування", level: "A1" },
 
   { en: "beautiful", ua: "гарний", level: "A1" },
@@ -38,10 +37,7 @@ const uniquePairs = [
   { en: "city", ua: "місто", level: "A1" },
   { en: "river", ua: "річка", level: "A1" },
   { en: "advice", ua: "порада", level: "A1" },
-  { en: "climate", ua: "клімат", level: "A1" },
-  { en: "technology", ua: "технологія", level: "A1" },
   { en: "village", ua: "село", level: "A1" },
-  { en: "building", ua: "будівля", level: "A1" },
   { en: "mountain", ua: "гора", level: "A1" },
   { en: "holiday", ua: "відпустка", level: "A1" },
 
@@ -68,7 +64,6 @@ const uniquePairs = [
   { en: "guess", ua: "здогадуватися", level: "A1" },
   { en: "borrow", ua: "позичати", level: "A1" },
   { en: "climb", ua: "лазити", level: "A1" },
-  { en: "cook", ua: "готувати", level: "A1" },
   { en: "develop", ua: "розвивати", level: "A1" },
   { en: "discover", ua: "відкривати", level: "A1" },
   { en: "enjoy", ua: "насолоджуватися", level: "A1" },
@@ -77,9 +72,6 @@ const uniquePairs = [
 
   { en: "teacher", ua: "вчитель", level: "A1" },
   { en: "writer", ua: "письменник", level: "A1" },
-  { en: "career", ua: "кар'єра", level: "A1" },
-  { en: "university", ua: "університет", level: "A1" },
-  { en: "college", ua: "коледж", level: "A1" },
   { en: "relationship", ua: "відносини", level: "A1" },
 
   { en: "intelligent", ua: "розумний", level: "A1" },
@@ -106,13 +98,10 @@ const uniquePairs = [
 
   { en: "author", ua: "автор", level: "A1" },
   { en: "basket", ua: "кошик", level: "A1" },
-  { en: "camera", ua: "камера", level: "A1" },
   { en: "concert", ua: "концерт", level: "A1" },
   { en: "customer", ua: "клієнт", level: "A1" },
-  { en: "energy", ua: "енергія", level: "A1" },
   { en: "festival", ua: "фестиваль", level: "A1" },
   { en: "nature", ua: "природа", level: "A1" },
-  { en: "weather", ua: "погода", level: "A1" },
 
   { en: "arrive", ua: "приїжджати", level: "A1" },
   { en: "belong", ua: "належати", level: "A1" },
@@ -159,28 +148,19 @@ const uniquePairs = [
   // Рівень A1
   { en: "clear", ua: "чистий", level: "A1" },
   { en: "dirty", ua: "брудний", level: "A1" },
-  { en: "help", ua: "допомога", level: "A1" },
   { en: "problem", ua: "проблема", level: "A1" },
   { en: "music", ua: "музика", level: "A1" },
   { en: "party", ua: "вечірка", level: "A1" },
   { en: "event", ua: "подія", level: "A1" },
-  { en: "hotel", ua: "готель", level: "A1" },
   { en: "travel", ua: "подорож", level: "A1" },
   { en: "object", ua: "об'єкт", level: "A1" },
 
   { en: "move", ua: "рухатися", level: "A1" },
-  { en: "drive", ua: "водити", level: "A1" },
-  { en: "stop", ua: "зупинятися", level: "A1" },
-  { en: "start", ua: "починати", level: "A1" },
-  { en: "finish", ua: "закінчувати", level: "A1" },
   { en: "grow", ua: "рости", level: "A1" },
   { en: "change", ua: "змінювати", level: "A1" },
-  { en: "open", ua: "відкривати", level: "A1" },
-  { en: "close", ua: "закривати", level: "A1" },
   { en: "meet", ua: "зустрічати", level: "A1" },
 
   { en: "reason", ua: "причина", level: "A1" },
-  { en: "fact", ua: "факт", level: "A1" },
   { en: "truth", ua: "правда", level: "A1" },
   { en: "lie", ua: "брехня", level: "A1" },
   { en: "wish", ua: "бажання", level: "A1" },
@@ -275,8 +255,6 @@ const uniquePairs = [
   { en: "landscape", ua: "ландшафт", level: "A1" },
   { en: "legend", ua: "легенда", level: "A1" },
   { en: "literature", ua: "література", level: "A1" },
-  { en: "message", ua: "повідомлення", level: "A1" },
-  { en: "model", ua: "модель", level: "A1" },
   { en: "painting", ua: "картина", level: "A1" },
   { en: "performance", ua: "вистава", level: "A1" },
   { en: "population", ua: "населення", level: "A1" },
@@ -294,7 +272,6 @@ const uniquePairs = [
 
   // Рівень A1
   { en: "solution", ua: "рішення", level: "A1" },
-  { en: "system", ua: "система", level: "A1" },
   { en: "task", ua: "завдання", level: "A1" },
   { en: "team", ua: "команда", level: "A1" },
   { en: "topic", ua: "тема", level: "A1" },
@@ -378,7 +355,6 @@ const uniquePairs = [
   { en: "calculate", ua: "обчислювати", level: "A1" },
   { en: "compare", ua: "порівнювати", level: "A1" },
   { en: "depend", ua: "залежати", level: "A1" },
-  { en: "develop", ua: "розвивати", level: "A1" },
   { en: "discuss", ua: "обговорювати", level: "A1" },
   { en: "encourage", ua: "заохочувати", level: "A1" },
   { en: "identify", ua: "визначати", level: "A1" },
@@ -393,7 +369,6 @@ const uniquePairs = [
   { en: "progress", ua: "прогрес", level: "A1" },
   { en: "resource", ua: "ресурс", level: "A1" },
   { en: "solution", ua: "рішення", level: "A1" },
-  { en: "strategy", ua: "стратегія", level: "A1" },
 
   { en: "brave", ua: "хоробрий", level: "A1" },
   { en: "calm", ua: "спокійний", level: "A1" },
@@ -560,7 +535,6 @@ const uniquePairs = [
   { en: "use", ua: "використовувати", level: "A1" },
   { en: "value", ua: "цінувати", level: "A1" },
   { en: "volunteer", ua: "волонтерити", level: "A1" },
-  { en: "work", ua: "працювати", level: "A1" },
   // Рівень A1
   { en: "achieve", ua: "досягати", level: "A1" },
   { en: "adapt", ua: "адаптуватися", level: "A1" },
